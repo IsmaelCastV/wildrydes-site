@@ -10,27 +10,27 @@ const ddb = new AWS.DynamoDB.DocumentClient();
 
 const fleet = [
 	{
-		Name: 'Bucephalus',
+		Name: 'Ismael 1',
 		Color: 'Golden',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Scrappy',
+		Name: 'Ismael 2',
 		Color: 'Mean Green',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Cosmo',
+		Name: 'Ismael 3',
 		Color: 'Royal Blue',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Shadowfax',
+		Name: 'Ismael 4',
 		Color: 'White',
 		Gender: 'Male',
 	},
 	{
-		Name: 'Rocinante',
+		Name: 'Ismael 5',
 		Color: 'Yellow',
 		Gender: 'Female',
 	},
@@ -76,7 +76,7 @@ exports.handler = (event, context, callback) => {
 				Eta: '30 seconds',
 				Rider: username,
 			}),
-			headers: {'Access-Control-Allow-Origin': '*',},
+			headers: { 'Access-Control-Allow-Origin': '*', },
 		});
 	}).catch((err) => {
 		console.error(err);
